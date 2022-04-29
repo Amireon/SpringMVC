@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+
+<h1>首页</h1>
+<!--thymeleaf语法-->
+<ul>
+    <li><a th:href="@{/target}">目标页面target.html</a></li>
+    <li><a th:href="@{/testRequestMapping}">测试RequestMapping注解的位置</a></li>
+    <li><a th:href="@{/trm}">测试RequestMapping注解的value属性</a></li>
+    <li>
+        <form th:action="@{/trm}" method="post">
+            <input type="submit" value="测试RequestMapping的method属性 --> POST">
+        </form>
+    </li>
+    <li>
+        <a th:href="@{testParamsAndHeaders(username='admin')}">测试RequestMapping的Params属性</a>
+    </li>
+    <li><a th:href="@{/a1a/testAnt}">@RequestMapping支持Ant风格的路径</a></li>
+    <li><a th:href="@{/testPath/1/admin}">@RequestMapping支持路径中的占位符</a></li>
+
+    <li>
+        <a th:href="@{/testRequestByServletAPI}">通过servletAPI向请求域request共享数据</a><br>
+        <a th:href="@{/testModelAndView}">通过ModelAndView向请求域request共享数据</a><br>
+        <a th:href="@{/testModel}">通过Model向请求域request共享数据</a><br>
+
+    </li>
+
+</ul>
+
+
+</body>
+</html>

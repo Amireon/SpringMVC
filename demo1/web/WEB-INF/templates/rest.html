@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thyemleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>RESTFul</title>
+</head>
+<body>
+
+<a th:href="@{/users}">查询所有用户信息</a> <br>
+
+<a th:href="@{/user/1}">根据id查询用户信息</a><br>
+
+<form th:action="@{/user}" method="post" >
+    用户名:<input type="text" name="username"> <br>
+    密码:<input type="password" name="password"><br>
+    <input type="submit" value="添加"> <br>
+</form>
+<hr>
+<form th:action="@{/user}" method="post" >
+    <input type="hidden" name="_method" value="PUT">
+    用户名:<input type="text" name="username"> <br>
+    密码:<input type="password" name="password"><br>
+    <input type="submit" value="修改"> <br>
+</form>
+
+
+
+
+</body>
+</html>
