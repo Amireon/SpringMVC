@@ -1,7 +1,4 @@
-视频教程：B站尚硅谷SpringMVC
-📓Spring MVC 框架使用演示，点击在线文档查看详细笔记
-
-[![](https://img.shields.io/badge/在线-文档-yellowgreen)](https://mowangblog.github.io/SpringMVC-Demo/#/)
+视频教程：https://www.bilibili.com/video/BV1Ry4y1574R
 
 # 第1章 SpringMVC简介
 
